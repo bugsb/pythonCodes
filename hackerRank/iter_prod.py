@@ -7,7 +7,8 @@ B = input().split(" ")
 A = [int(i) for i in A] #converting in list of int from str
 B = [int(i) for i in B]
 
-cart = list(product(A,B))
+cart = sorted( list( product(A, B ) ) )
 
 
-print(*sorted(cart),end=" \n")
+for val in cart:
+    print(val)
