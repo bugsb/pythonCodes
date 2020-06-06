@@ -46,6 +46,8 @@ class linkList:
     def del_at_end(self):
         if self.head == None:
             print("Kuch nahi hai delete karne ko !")
+        elif self.head.next == None:
+            self.head =None
         else:
             temp = self.head
             while temp.next.next is not None:
