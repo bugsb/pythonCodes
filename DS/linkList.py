@@ -1,21 +1,21 @@
 
 class node:
 
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
         self.next = None
+
 
 class linkList:
     def __init__(self):
         self.head = None
-        
 
-    def insert_at_beg( self, data ):
-        newNode = node( data )
+    def insert_at_beg(self, data):
+        newNode = node(data)
         newNode.next = self.head
         self.head = newNode
 
-    def insert_at_end(self,data):
+    def insert_at_end(self, data):
         newNode = node(data)
         if self.head == None:
             self.head = newNode
@@ -24,7 +24,6 @@ class linkList:
             while temp.next is not None:
                 temp = temp.next
             temp.next = newNode
-        
 
     def display(self):
         if self.head == None:
@@ -32,8 +31,8 @@ class linkList:
         else:
             temp = self.head
             while temp is not None:
-                print("",end=" ->")
-                print(temp.data,end="")
+                print("", end=" ->")
+                print(temp.data, end="")
                 temp = temp.next
             print("")
 
@@ -41,13 +40,13 @@ class linkList:
         if self.head == None:
             print("Kuch nahi hai delete karne ko !")
         else:
-            self.head=self.head.next
+            self.head = self.head.next
 
     def del_at_end(self):
         if self.head == None:
             print("Kuch nahi hai delete karne ko !")
         elif self.head.next == None:
-            self.head =None
+            self.head = None
         else:
             temp = self.head
             while temp.next.next is not None:
