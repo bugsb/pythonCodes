@@ -1,0 +1,12 @@
+{
+ "cmd": ["gnome-terminal -- bash -c \"python3 -u $file;echo;echo Press ENTER to exit; read line\" "],"shell": true
+}
+
+themes:
+guna
+one dark
+
+packages:
+pylint
+terminal
+fileIcon
