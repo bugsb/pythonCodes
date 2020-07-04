@@ -5,8 +5,13 @@
 themes:
 guna
 one dark
+setiUI
+setiUX
 
 packages:
 pylint
 terminal
 fileIcon
+jedi autocomp
+jedi syntax
+sublimeLinter - flake8 ,pylint
