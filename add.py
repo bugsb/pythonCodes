@@ -1,13 +1,10 @@
-from datetime import datetime,pytz
-a=3
-b=3
+import datetime
+import pytz
+a = 3
+b = 3
 print(f"a+b is {a+b}")
 
-for i in range(9):
-	print("this is	magical nat")
 
+l = [1, 4, 5]
 
-
-dt = datetime.date.today()
-
-print(dt)
+print()
